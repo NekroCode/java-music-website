@@ -1,0 +1,12 @@
+<header>
+	<h1>Header</h1>
+	<nav>
+		<a href="index.jsp">Home</a>
+		<a href="">Music</a>
+		<a href="about.jsp">About</a>
+	</nav>
+</header>
+<div>
+	<a href="login.jsp">Login</a>
+</div>
+<hr>
