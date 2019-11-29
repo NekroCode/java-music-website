@@ -4,11 +4,11 @@
 <html>
 <head>
 	<title>Welcome</title>
-	<%@ include file="WEB-INF/jspf/head.jspf" %>
+	<%@ include file="../WEB-INF/jspf/head.jspf" %>
 </head>
 <body>
-	<%@ include file="WEB-INF/jspf/header.jspf" %>
+	<%@ include file="../WEB-INF/jspf/header.jspf" %>
 	<p>Welcome</p>
-	<%@ include file="WEB-INF/jspf/footer.jspf" %>
+	<%@ include file="../WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>

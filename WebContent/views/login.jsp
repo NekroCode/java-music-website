@@ -4,10 +4,10 @@
 <html>
 <head>
 	<title>Login</title>
-	<%@ include file="WEB-INF/jspf/head.jspf" %>
+	<%@ include file="../WEB-INF/jspf/head.jspf" %>
 </head>
 <body>
-	<%@ include file="WEB-INF/jspf/header.jspf" %>
+	<%@ include file="../WEB-INF/jspf/header.jspf" %>
 	<p>Login</p>
 	<form action="Login" method="POST">
 		<label for="">Username:</label>
@@ -18,6 +18,6 @@
 	</form>
 	<%= request.getAttribute("login_logger") %>
 	<p>No account? Register <a a href="userRegistration.jsp">here</a></p>
-	<%@ include file="WEB-INF/jspf/footer.jspf" %>
+	<%@ include file="../WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>

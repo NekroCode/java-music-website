@@ -5,11 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 	<title>Insert title here</title>
-	<%@ include file="WEB-INF/jspf/head.jspf" %>
+	<%@ include file="../WEB-INF/jspf/head.jspf" %>
 </head>
 <body>
-	<%@ include file="WEB-INF/jspf/header.jspf" %>
+	<%@ include file="../WEB-INF/jspf/header.jspf" %>
 	<p>About</p>
-	<%@ include file="WEB-INF/jspf/footer.jspf" %>
+	<%@ include file="../WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>
