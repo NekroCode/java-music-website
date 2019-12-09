@@ -23,17 +23,20 @@ public class UserRegistrationController extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
-		if (validateInput(username) == false || validateInput(password) == false)
+		if (validateInput(username) == false || validateInput(password) == false) {
 			request.setAttribute("registration_logger", "Username or password cannot be empty.");
+		}
 		else {
 			ArrayList<String> users = UserDao.getUsers();
-			if (users.contains(username))
+			if (users.contains(username)) {
 				request.setAttribute("registration_logger", "Username taken. Please try a different name.");
+			}
 			else {
 				String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 				UserBean user = new UserBean(username, hashedPassword, 2);
 				UserDao userDao = new UserDao();
 				userDao.insertUser(user);
+				
 				request.setAttribute("registration_logger", "Registration successful. Click <a href='login.jsp'>here</a> to login.");
 			}
 		}
@@ -42,10 +45,12 @@ public class UserRegistrationController extends HttpServlet {
 	}
 	
 	private boolean validateInput(String input) {
-		if (input.isBlank())
+		if (input.isBlank()) {
 			return false;
-		else
+		}
+		else {
 			return true;
+		}
 	}
 
 }
