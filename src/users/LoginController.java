@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.mindrot.jbcrypt.BCrypt;
 
-@WebServlet("/login")
+@WebServlet("/Login")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
