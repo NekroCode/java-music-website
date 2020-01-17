@@ -17,7 +17,6 @@
 		<input type="submit" value="Login">
 	</form>
 	<%= request.getAttribute("login_logger") %>
-	<p>No account? Register <a a href="userRegistration.jsp">here</a></p>
 	<%@ include file="../WEB-INF/jspf/footer.jspf" %>
 </body>
 </html>

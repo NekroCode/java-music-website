@@ -5,10 +5,11 @@
 	<nav class="header-right">
 		<a href="<%=root%>">Home</a>
 		<a href="">Music</a>
-		<a href="<%=root%>/views/about.jsp">About</a>
+		<a href="<%=root%>/about.jsp">About</a>
 	</nav>
 </header>
 <div>
-	<a href="<%=root%>/views/login.jsp">Login</a>
+	<a href="<%=root%>/login.jsp">Login</a>
+	<a href="<%=root%>/userRegistration.jsp">Register</a>
 </div>
 <hr>
